@@ -1,0 +1,38 @@
+# Currency Converter
+
+# Define the exchange rates
+exchange_rates = {
+    'USD': 1.0,   # Assume USD as the base currency
+    'EUR': 0.85,  # Example: 1 USD = 0.85 EUR
+    'GBP': 0.75,  # Example: 1 USD = 0.75 GBP
+    'INR': 74.15, # Example: 1 USD = 74.15 INR
+    'JPY': 109.62 # Example: 1 USD = 109.62 JPY
+}
+
+def convert_currency(amount, from_currency, to_currency):
+    if from_currency not in exchange_rates or to_currency not in exchange_rates:
+        return "Invalid currency code"
+    
+    # Convert the amount to USD (base currency) first
+    amount_in_usd = amount / exchange_rates[from_currency]
+    
+    # Convert the USD amount to the target currency
+    converted_amount = amount_in_usd * exchange_rates[to_currency]
+    
+    return converted_amount
+
+def main():
+    print("Welcome to the Currency Converter!")
+    amount = float(input("Enter the amount you want to convert: "))
+    from_currency = input("Enter the currency code you are converting from (e.g., USD, EUR, GBP): ").upper()
+    to_currency = input("Enter the currency code you are converting to: ").upper()
+    
+    converted_amount = convert_currency(amount, from_currency, to_currency)
+    
+    if isinstance(converted_amount, str):
+        print(converted_amount)
+    else:
+        print(f"{amount} {from_currency} is equal to {converted_amount:.2f} {to_currency}")
+
+if __name__ == "__main__":
+    main()
