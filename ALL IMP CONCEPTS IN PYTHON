@@ -1,0 +1,762 @@
+#  for getting erandom jokes
+# import pyjokes
+# joke = pyjokes.get_jokes()
+# print(joke)
+
+from logging import Manager
+from sqlite3 import ProgrammingError
+from typing import Self
+
+
+print("hello world")
+
+# VARIABLES 
+b=1
+b=2
+c=3
+name ="mayank"
+print(b+b)
+
+#  DATATYPES 
+b=1 # b is an integer 
+b=9.4 # b is an float type integer
+c="mayank"  # c is an string 
+d= False  # d is an booelan type varaiable
+# e= none  # e is none type variable
+
+# OPERATORS IN PYTHON 
+#  ARTHEMETIC OPERATORS
+b=7
+b=9
+c=b+b
+print(c)
+
+# ASSIGNMENT OPERATORS 
+b=4-2
+print(b)
+b=4
+b+= 3
+b-=2
+print(b)
+
+# COMPARISON OPERRATORS 
+d= 5==5
+print(d)
+
+#  LOGICAL OPERATORS
+e = True or False
+print(e)
+print(not(True))
+
+#  TYPES 
+b="84.4"
+b=float(b)
+t = type(b)
+print(t)
+
+#  INPUT IN PYTHON 
+# b = int(input("enter the number 1:"))
+# b=int(input("enter the number 2 :"))
+# print("number b is :" ,b )
+# print("number b is:", b)
+# print("sum is" , b+b)
+
+# b = input("enter the value of b :")
+# b="mayank"
+# print(type(b))
+
+# b=90
+# b=87
+# print("b is greater than b",b>b)
+# print("The average of these two number is", (b+b)/2)
+
+# print("The square of the number is", b**2)
+# print("The square of the number is", b*b)
+
+# ********************************************************************************************************
+
+#  CHAPTER 3 
+# name ="mayank"
+# name1 = name [0:3]
+# print(name1)
+# character1 = name[1]
+# print(character1)
+
+#   STRING METHOD 
+# name = "mayank"
+# print(name[0:3])
+# print(name[-4:-1])
+# print(name[1:4])
+# print(name[:4])
+# print(name[1:])
+# print(name[1:5])
+
+# string function 
+# name ="mayank"
+# print(len(name))
+# print(name.endswith("aya")) 
+# print(name.startswith("ma"))
+# print(name.__sizeof__)
+# print(name.capitalize())
+
+# *******************************************************************************************************
+
+#  CHAPER 4 - LISTS AND TUPLES 
+# freinds = ["apple" , "orange" ,"mango","hello", 33, 3.33 , True]
+# print(freinds[0])
+# freinds[0] ="grapes"
+# print(freinds[0])
+# print(freinds[1:4])
+
+# # list method 
+# freinds = ["apple" , "orange" ,"mango","hello", 33, 3.33 , True]
+# print(freinds)
+# freinds.append("mayank")
+# print(freinds)
+
+# l1 = [3,4,4,5,6,67,3333]
+# l1.sort()
+# print(l1)
+# l2 = [3,4,4,5,6,67,3333]
+# l2.reverse()
+# print(l2)
+# l3 = [3,4,4,5,6,67,3333]
+# l3.insert(2,45454545)
+# print(l3)
+# l4 = [3,4,4,5,6,67,3333]
+# l4.pop(3)
+# print(l4)
+
+#  TUPLES IN PYTHON
+# b =(1,223,444,555,6667,77,555,False,"mayank")
+# print(b)
+# print(type(b))
+#  tuples method
+# b =(1,223,444,555,6667,77,555,False,"mayank")
+# no =b.count(555)
+# print(no)
+# i=b.index(444)
+# print(i)
+# print(len(b))
+
+# *******************************************************************************************************
+
+#   CHAPTER 5 DICT AND SETS 
+# d ={}
+# marks ={
+#     "mayank":100,
+#     "rohan":34,
+#     "sahil":78
+# }
+# print(marks["mayank"])
+#  dict methods
+marks ={
+    "mayank":100,
+    "rohan":34,
+    "sahil":78
+}
+print(marks.items())
+print(marks.keys())
+print(marks.values())
+marks.update({"mayank":200 , "rose":201})
+print(marks)
+# print(marks.get("mayank2")) output none
+# print(marks["mayank2"])  returns an error
+
+#  SETS IN PYTHON 
+# e =set()  # it is an empty set 
+# set ={2,3,4,6,7,7}
+# print(e)
+# print(set)
+# sets methods 
+# set ={2,3,4,6,7,7}
+# print(set , type(set))
+# set.add(7821)
+# print(set)
+
+# set.remove(1)
+# print(set)
+
+# set.update(2,2222)
+# print(set, type(set))
+
+# set.pop(2)
+# print*(set)
+
+# set.clear()
+# print(set)
+
+#  union and intersection 
+# s1 = {1, 45, 6, 78}  
+# s2 = {7, 8, 1, 78}
+# print(s1.union(s2))
+# print(s1.intersection(s2))
+
+# ***************************************************************************************************************
+#  chapter 6 
+#  conditionals 
+# b = int(input("enter your age:"))
+# if(b>=18):
+#     print("you are above the age")
+# else:
+#     print("you are below the age!")
+    
+#     print("jai shree ram!")
+    
+#if else ladder 
+# b = int(input("Enter your age: "))
+
+# # If elif else ladder
+# if(b>=18):
+#     print("You are above the age of consent")
+#     print("Good for you")
+
+# elif(b<0):
+#     print("You are entering an invalid negative age")
+
+# elif(b==0):
+#     print("You are entering 0 which is not b valid age")    
+
+# else:
+#     print("You are below the age of consent")
+    
+#  multiple if statement     
+# a = int(input("enter your age"))
+# if(a%2==0):
+#     print("a is even")
+    
+#     if(a>=18):
+#         print("good for you")
+#     elif(a<0):
+#         print("you are entering an invalid negative age")
+#     else:
+#         print("you are below the age!")
+        
+# print("end of program")  
+
+#*************************************************************************************************************       # 
+
+#    different types of loops
+for i in range (1,6):
+    print(i)
+    
+#  while loops 
+# i =1 
+# while(i<51):
+#     print(i)
+#     i+=1 
+    
+ # fo r printing the list  
+l =[ 1, "mayank" , "false", "true" , "subham" , "rohan"]
+i=0
+while(i<len(l)):
+    print(l[i])
+    i+=1    
+    
+# for i in range(4):
+#     print(i)    
+#  for loops in list  
+l =[1,2,3,4,5,6,7,8,9,0]
+for i in l :
+    print(i)    
+    
+#  for loops in tuples     
+t =( 56,77,533,5879,44)
+for i in t :
+    print(i)     
+# for loop with strings 
+s="mayank"
+for i in s :
+     print(i)  
+     
+# l=[1,2,4,5,6,8,9,0]
+# l =[1,2,3,4,5,6,7,8,9,0]
+
+# for item in l:
+#     print(item)  
+# else:
+#     print("jai shree ram!")   
+
+
+#  break and continue statment 
+# for i in range (100):
+#     if(i==34):
+#         break
+#     print(i)
+    
+    
+# for i in range(100):
+#     if(i==34):
+#         continue
+#     print(i)
+    
+#  pass stament     
+# for i in range(100):
+#      pass  # pass it and excuete the next statemnt 
+# i=0
+# while(i<45):
+#     print(i)
+#     i+=1 
+    
+# *************************************************************************************************
+#  FUNCTIONS IN PYTHON 
+def avg():
+    a=5
+    b=4
+    c=7
+    average = (a+b+c)/3
+    print(average)
+    
+    #  function call
+    # avg() # Function Call
+# print("Thank you!")
+# avg()
+# # print("Thank you!")
+# # avg()
+# # print("Thank you!")
+
+# def goodday():
+#     print("good morning")
+    
+    
+# goodday()
+
+# def mayank(name ,ending):
+#     print("good  day,"+ name)
+#     print(ending)
+#     return "ok"
+
+# a = mayank("mayank" , "thankyouuu")
+# print(a)
+
+
+def xyz(name , ending ="thank you"):
+    print(f"good day , {name}")
+    print(ending)
+    
+xyz("mayank" ,"thanks")
+xyz("rohan")
+
+
+#  RECURSION CONCEPT 
+#  RECURSION EXAMPLE
+def factorial(n):
+    if(n==1 or n==0):
+        return 1
+    return n*factorial(n-1)
+
+n=5
+print(f" the factorial of number is :{factorial(n)}")
+
+# *************************************************************************************************************
+
+#  FILES IN PYTHON 
+f = open("file.txt" ,"r")
+data = f.read()
+print(data)
+f.close()    
+
+st ="hey mayank you are amazing"
+f= open("myfile.txt" , "w")
+f.write(st)
+f.close()
+
+#   MORE FILES FUNCTIONS 
+f = open ("file.txt")
+lines =f.readlines()
+print(lines , type(lines))
+
+line1 = f.readline()
+print(line1 , type(line1))
+
+
+line = f.read()
+print(line ,type(line))
+
+line =f.readline()
+while(line !=""):
+    print(line)
+    line =f.readline()
+    
+    f.close()
+    
+    
+st = "hey mayank you are amazing"    
+f = open("myfile.txt" ,"a")  # append 
+f.write(st)
+# f.read()  # throws an error
+f.close()
+    
+    
+f = open("file.txt")
+print(f.read())
+f.close()
+
+with open ("file.txt") as f:
+    print(f.read()) 
+     
+# ********************************************************************************************
+# OOPS CONCEPT IN PYTHON     #
+# class employee:
+#     languaeg = "py"
+#     salary = 1000
+    
+#     mayank = employee() # type: ignore
+#     mayank.name = "mayank"
+#     print(mayank.name , mayank.language , mayank.salary)
+    
+    
+# rohan = Employee()
+# rohan.name = "Rohan Roro Robinson"
+# print(rohan.name, rohan.salary, rohan.language)
+
+# class Employee: 
+#     language = "Python" # This is a class attribute
+#     salary = 1200000
+
+
+# harry = Employee()
+# harry.language = "JavaScript" # This is an instance attribute
+# print(harry.language, harry.salary)
+
+            
+            
+# class Employee: 
+#     language = "Python" # This is a class attribute
+#     salary = 1200000
+
+#     def getInfo(self):
+#         print(f"The language is {self.language}. The salary is {self.salary}")
+
+#     @staticmethod
+#     def greet():
+#         print("Good morning")
+
+
+# harry = Employee()
+# # harry.language = "JavaScript" # This is an instance attribute
+# harry.greet()
+# harry.getInfo() 
+# Employee.getInfo(harry)
+             
+            
+#  CONSTRUCTORS IN PYTHON
+# class good:
+#     language ="python"
+#     salary = 300000
+    
+#     def __init__(self , name , salary , language) -> None:
+#         self.name = name 
+#         self.salary = salary
+#         self.language = language
+#         print("i am creating an object")
+        
+#     def hey(Self):
+        
+#         print(f" the language is {Self.language} . The salary is {Self.salary}")
+        
+#     @staticmethod
+#     def hii():
+#         print("good morning")
+        
+#     mayank = good("mayank" , 13000000 , "js")  # type: ignore
+#     mayank.name ="mayank"
+#     print(mayank.name , mayank.salary , mayank.language) 
+    
+# ******************************************************************************************************************
+
+#   INHERITANCE IN PYTHON 
+# class employee:
+    # name = "mayank"
+    # salary =262626
+    # company = "tcs"
+    # def show(self):
+    #     print(f" the name of the employee is{self.name} and the salary is {self.salary}")
+        
+#  DOING INHERITANCE 
+# class programmer(employee):
+#     name = "mayank"
+#     salary =262626
+#     def showlanguage(self):
+#         print(f"the name is{self.name} and he is good with {self.language} language")
+        
+# a=employee()
+# b=programmer()         
+# print(a.company , b.company)    
+# print(a.show)
+# print(b.showlanguage)   
+
+# #  MULTIPLE INHERITANCE 
+# class Employee:
+#     company = "ITC"
+#     name = "Default name"
+#     def show(self):
+#         print(f"The name of the Employee is {self.name} and the company is {self.company}")
+
+# class Coder:
+#     language = "Python"
+#     def printLanguages(self):
+#         print(f"Out of all the languages here is your language: {self.language}")
+     
+
+
+# class Programmer(Employee, Coder):
+#     company = "ITC Infotech"
+#     def showLanguage(self):
+#         print(f"The name is {self.company} and he is good with {self.language} language")
+
+
+# a = Employee()
+# b = Programmer()
+
+# b.show()
+# b.printLanguages()
+# b.showLanguage()
+        
+        
+#  MULTI LEVEL INHERITANCE 
+
+#  class employee:
+#     a = 1 
+
+#  class ProgrammingError(employee):
+#     b = 2 
+
+#  class Manager(ProgrammingError):
+#     c = 3
+
+# o = employee()
+# print(o.a) # Prints the a attribute
+# # print(o.b) # Shows an error as there is no b attribute in Employee class
+
+# o = ProgrammingError() 
+# print(o.a, o.b)
+
+
+# o = Manager()
+# print(o.a, o.b, o.c)
+
+
+# class employee:
+#     def __init__(self) -> None:
+#         print("constructor of employee")
+#     a = 1 
+ 
+# class ProgrammingError(employee):
+#     def __init__(self) -> None:
+#         print("constructor of employee")
+#     b = 2 
+
+# class Manager(ProgrammingError):
+#     def __init__(self) -> None:
+#             super().__init__()
+
+#     print("constructor of manager")
+#     c = 3
+
+# o = Manager()
+# print(o.a, o.b, o.c)
+
+
+# #  CLASS METHOD 
+# class employee:
+#     a=1
+    
+#     @classmethod
+#     def show(cls):
+#         print(f"the class attribute of a is {cls.a}")
+        
+# e= employee()
+# e.a =45
+# e.show()        
+
+
+#  DECORATOR PROPERTY IN PYTHON 
+# class employee:
+#     a=1
+    
+#     @classmethod
+#     def show(cls):
+#         print(f"the class attribute of a is: {cls.a}")
+        
+        
+#     @property
+#     def name (self):
+#         return f"{self.fname} {self.lname}" 
+    
+#     @name.setter
+#     def name (self , value):
+#         self.fname = value.split(" ")[0]
+#         self.lname = value.split(" ")[1] 
+        
+          
+# e = employee()
+# e.a =35
+
+# e.name = "mayank charde"
+# print(e.fname , e,name)
+
+# e.show()       
+   
+   
+   
+# OPERATOR OVERLOADING 
+class number :
+    def __init__(self ,n) -> None:
+        self.n =n 
+        
+    def __add__(self, num):
+        return self.n + num.n
+
+n = number (1) 
+m = number(2)
+print(n+m)      
+ 
+# ***********************************************************************************************************
+
+#   WALRUS OPERATOR
+if(n := len([1,2,34,4,5,6,66,5])) >3:
+    print(f"list is too long ({n} elements , expected<=3)") 
+    
+#  TYPES IN PYTHON     
+from typing import List,Union,Tuple
+
+n :int =5
+name :str = "mayank charde"
+
+def sum(a:int , b:int) -> int:
+    return a+b     
+    
+    
+#  MATCH CASE IN PYTHON (SIMILAR AS SWITCH CASE)
+def mayank(status):
+    match status:
+        case 1:
+            return "jai shree ram"
+        case 2:
+            return "heyyyy"
+        case 3:
+            return "hello mayank good morning"
+        case _:
+            return "unknown"
+        
+print(mayank(1))        
+
+
+#  EXCEPTION IN PYTHON [TRY AND EXCEPT]
+try:
+    a = 22
+    print(a)
+    
+except ValueError as v :
+    print("heyyy")
+    print(v)
+    
+except Exception as e :
+    print(e)
+    
+print("thankyouuuu!")    
+    
+    
+#  RAISING EXCEPTION 
+a=53
+# b=0
+b=45
+if(b==0):
+    raise ZeroDivisionError("Hey our program is not meant to divide numbers by zero")
+else :
+    print(f"the division a/b is{a/b}")  
+        
+        
+#  TRY-ELSE 
+try: 
+    a=36
+    print(a)
+    
+except Exception as e:
+    print(e)
+    
+else:
+    print("i am goood boy") 
+ 
+#  FINALLY KEYWORD 
+def main():
+    try:
+        a=22
+        print(a)
+        return
+    
+    except Exception as e :
+        print(e)
+        return
+    
+    finally:
+        print("jai shree ram!") 
+main()          
+
+
+
+a = 89    # IT IS A GLOBAL VARIABLE
+
+def fun(): 
+    # global a
+    a = 3
+    print(a)
+
+
+fun()
+print(a)
+
+
+#  ENUMERATE IN PYTHON 
+l=[2,33,55678,8999,544]
+
+for index ,item in enumerate(l):
+    print(f"the item number at index {index} is {item}")
+    
+    
+# *********************************************************************************************************
+
+
+square = lambda x: x*x
+print(square(5))
+
+
+a =[ "mayank" , "harry" , "rohan"]
+final ="::".join(a)
+print(final)
+
+
+a ="{0} is a good {1}".format("mayank" ,"boy")
+print(a)
+
+
+#  MAP EXAMPLEE
+# l =[1,2,4,5]
+t = (12,34,4,5,6)
+square = lambda x :x*x
+# sqlist = map(square ,l)
+sqlist = map(square ,t)
+# print(list(sqlist))
+print(tuple(sqlist))
+
+
+# FILTER EXAMPLEE 
+l =[1,2,4,5]
+def even(n):
+    if(n%2==0):
+        return True
+    return False
+
+onlyeven = filter(even , l)
+print(list(onlyeven))
+
+
+#  REDUCE EXAMPLE
+from functools import reduce 
+def sum(a,b):
+    return a+b
+
+mul = lambda x,y: x*y
+print(reduce(sum ,l))
+print(reduce(mul,l))
